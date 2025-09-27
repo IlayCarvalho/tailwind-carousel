@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carousel | tailwind</title>
+    <title>Carrossel | tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,10 +20,10 @@
         </button>
 
         <!-- Coteúdo do Carrossel -->
-        <div class="flex space-x-6 p-2">
+        <div id="carousel-container" class="flex space-x-6 p-2 w-full">
             <!-- Card 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1">
-                <div class="flex items-center gap-2">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1 min-w-[300px] h-[250px]">
+                <div class="flex items-center gap-2 card-message">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5A288A">
                             <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM380-420q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm280 40q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM480-160q85 0 155-40t113-106q-21-6-43-10t-45-4q-53 0-128 31T412-167q17 4 34 5.5t34 1.5Zm-127-26q35-72 79.5-107t67.5-47q-29-9-58.5-14.5T380-360q-45 0-89 11t-85 31q26 43 63.5 77.5T353-186Z"/>
@@ -46,8 +46,8 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1">
-                <div class="flex items-center gap-2">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1 min-w-[300px] h-[250px]">
+                <div class="flex items-center gap-2 card-message">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5A288A">
                             <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM380-420q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm280 40q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM480-160q85 0 155-40t113-106q-21-6-43-10t-45-4q-53 0-128 31T412-167q17 4 34 5.5t34 1.5Zm-127-26q35-72 79.5-107t67.5-47q-29-9-58.5-14.5T380-360q-45 0-89 11t-85 31q26 43 63.5 77.5T353-186Z"/>
@@ -70,8 +70,8 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1">
-                <div class="flex items-center gap-2">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1 min-w-[300px] h-[250px]">
+                <div class="flex items-center gap-2 card-message">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5A288A">
                             <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM380-420q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm280 40q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM480-160q85 0 155-40t113-106q-21-6-43-10t-45-4q-53 0-128 31T412-167q17 4 34 5.5t34 1.5Zm-127-26q35-72 79.5-107t67.5-47q-29-9-58.5-14.5T380-360q-45 0-89 11t-85 31q26 43 63.5 77.5T353-186Z"/>
@@ -94,8 +94,8 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1">
-                <div class="flex items-center gap-2">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1 min-w-[300px] h-[250px]">
+                <div class="flex items-center gap-2 card-message">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5A288A">
                             <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM380-420q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm280 40q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM480-160q85 0 155-40t113-106q-21-6-43-10t-45-4q-53 0-128 31T412-167q17 4 34 5.5t34 1.5Zm-127-26q35-72 79.5-107t67.5-47q-29-9-58.5-14.5T380-360q-45 0-89 11t-85 31q26 43 63.5 77.5T353-186Z"/>
@@ -116,6 +116,31 @@
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                 </div>
             </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-purple-500 flex flex-col justify-between gap-1 min-w-[300px] h-[250px]">
+                <div class="flex items-center gap-2 card-message">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 -960 960 960" fill="#5A288A">
+                            <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM380-420q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm280 40q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM480-160q85 0 155-40t113-106q-21-6-43-10t-45-4q-53 0-128 31T412-167q17 4 34 5.5t34 1.5Zm-127-26q35-72 79.5-107t67.5-47q-29-9-58.5-14.5T380-360q-45 0-89 11t-85 31q26 43 63.5 77.5T353-186Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-purple-800 font-bold">Lorem Ipsum</p>
+                        <p class="text-[10px] text-gray-500">pretium metus et, euismod ero</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[13px] text-gray-500">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor blandit lorem, sit amet aliquam nisl efficitur et. Fusce in quam semper, pretium metus et, euismod eros."</p>
+                </div>
+
+                <!-- Estrelas de avaliação -->
+                <div class="flex text-yellow-500 text-1xl">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+            </div>
+            
         </div>
 
         <!-- Botão de Navegação Direito -->
@@ -126,6 +151,8 @@
         </button>
 
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
