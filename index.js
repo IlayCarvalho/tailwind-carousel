@@ -14,7 +14,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return cardWidth + gap;
     };
 
+    // Atualiza o estado (habilitado/desabilitado) dos botões
+    const updateButtons = () => {
+        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
 
+        prevBtns.forEach(btn => {
+            if (carousel.scrollLeft <= 0) {
+                btn.disabled = true;
+                btn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                btn.disabled = false;
+                btn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+
+        nextBtns.forEach(btn => {
+            if (carousel.scrollLeft >= maxScrollLeft) {
+                btn.disabled = true;
+                btn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                btn.disabled = false;
+                btn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+    };
 
     // Funções de rolagem
     const scrollLeft = () => {
