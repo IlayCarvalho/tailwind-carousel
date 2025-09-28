@@ -1,4 +1,4 @@
-# Carousel - HTML + TailwindCSS + JavaScript
+# Carrossel - HTML + TailwindCSS + JavaScript
 
 Um carrossel simples e responsivo desenvolvido com **HTML, TailwindCSS e JavaScript**.  
 Projeto criado para **estudos de frontend**, mas que pode ser facilmente adaptado e reutilizado em diferentes aplicações.
