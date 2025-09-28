@@ -6,7 +6,7 @@ Projeto criado para **estudos de frontend**, mas que pode ser facilmente adaptad
 ---
 
 ## 🚀 Demonstração
-👉 (Adicione aqui o link do GitHub Pages ou Vercel quando publicar)
+👉 (https://ilaycarvalho.github.io/tailwind-carousel/)
 
 ---
 
